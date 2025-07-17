@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大阪万博を紹介～</title>
+    <style>
+        /* リセットと基本設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        /* ナビバーのスタイル */
+        .navbar {
+            background-color: rgb(31, 73, 125);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* 見出し */
+        h1 {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            background-color: #1f497d;  /* 背景色 */
+            color: white;               /* 文字色 */
+            /* padding: 20px 10px;         内側の余白       */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+}
+        /* 画像中央表示 */
+        .main-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* 背景色付きセクション */
+        .slide {
+            background-color: rgb(31, 73, 125);
+            height: 300px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- ナビバー -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">ホーム</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">バンダイ</a>
+            <a href="#">漫画とか</a>
+            <a href="#">グルメ</a>
+        </div>
+    </nav>
+
+    <!-- 見出し -->
+    <h1>大阪万博</h1>
+
+    <p class="description">
+        2025年の大阪・関西万博は、いのち輝く未来社会のデザインをテーマに、世界中の国々が集結します。
+        持続可能な開発目標（SDGs）の達成にも貢献するイベントです。
+    </p>
+
+
+    <!-- 背景色付きセクション -->
+    <div class="slide"></div>
+
+
+
 </body>
+<style>
+    .slide {
+        position: relative;
+        width: 100%;
+        /* ディスプレイ幅に合わせる */
+        height: 100vh;
+        /* ディスプレイの高さに合わせる */
+        margin: 0 auto;
+        background: rgb(31, 73, 125);
+        font-family: "Noto Sans JP", sans-serif;
+        overflow: hidden;
+    }
+</style>
+
 </html>
