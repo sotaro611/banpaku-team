@@ -1,113 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大阪万博を紹介～</title>
-    <style>
-        /* リセットと基本設定 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-        }
-
-        /* ナビバーのスタイル */
-        .navbar {
-            background-color: rgb(31, 73, 125);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* 見出し */
-        h1 {
-            text-align: center;
-            margin-top: 60px;
-            margin-bottom: 20px;
-            background-color: #1f497d;  /* 背景色 */
-            color: white;               /* 文字色 */
-            /* padding: 20px 10px;         内側の余白       */
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-}
-        /* 画像中央表示 */
-        .main-image {
-            display: block;
-            margin: 0 auto;
-            max-width: 80%;
-            height: auto;
-        }
-
-        /* 背景色付きセクション */
-        .slide {
-            background-color: rgb(31, 73, 125);
-            height: 300px;
-            margin-top: 40px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-
 <body>
-
-    <!-- ナビバー -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <a href="#">ホーム</a>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ホーム</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">バンダイ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="indextaito.html">漫画とか</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">グルメ</a>
+                </li>
         </div>
-        <div class="nav-right">
-            <a href="#">バンダイ</a>
-            <a href="#">漫画とか</a>
-            <a href="#">グルメ</a>
-        </div>
-    </nav>
+    </div>
+</nav>
+<h1 style="text-align: center; margin-top: 60px;">大阪万博</h1>
+<div class="container">
 
-    <!-- 見出し -->
-    <h1>大阪万博</h1>
+<p class="description">
+    大阪万博とは簡単<br>
+    に言えば「世界中から人や<br>
+    モノが集まるイベント」<br>
+    大阪万博とは、世界中から多くの人や<br>
+    モノが集まる大規模な国際イベントです。<br>
+    会場は新技術やシステムを実証する「未来<br>
+    社会の実験場」と位置づけられ、<br>
+    世界中の最先端技術や新しいアイデアを<br>
+    体験できます。<br>
+</p>
 
-    <p class="description">
-        2025年の大阪・関西万博は、いのち輝く未来社会のデザインをテーマに、世界中の国々が集結します。
-        持続可能な開発目標（SDGs）の達成にも貢献するイベントです。
-    </p>
+<h2 class="acses">会場までのアクセス</h2>
+<!-- 画像を追加 -->
+<img src="img suzuki/facility-img-main.jpg" alt="大阪万博ロゴ" class="expo-image">
 
-
-    <!-- 背景色付きセクション -->
-    <div class="slide"></div>
-
-
-
-</body>
 <style>
-    .slide {
-        position: relative;
-        width: 100%;
-        /* ディスプレイ幅に合わせる */
-        height: 100vh;
-        /* ディスプレイの高さに合わせる */
-        margin: 0 auto;
-        background: rgb(31, 73, 125);
-        font-family: "Noto Sans JP", sans-serif;
-        overflow: hidden;
-    }
+.description {
+    max-width: 800px;            /* 横幅制限 */
+    /* margin: 40px auto 20px auto; 上下マージン・左右中央配置（←幅制限ありだからOK） */
+    margin-top: 50px;
+    padding: 0 15px;
+    font-size: 20px;             /* 読みやすい大きさ */
+    line-height: 1.8;            /* 行間広げる */
+    color: #333;
+    text-align: left;            /* ← ココが重要！左寄せに固定 */
+}
+.expo-image {
+    display: block;
+    max-width: 50%;     /* ← 小さくする！例: 50% */
+    height: auto;       /* アスペクト比（縦横比）を保つ */
+    margin: 40px auto;
+    margin-left: 28px;
+}
+.acses {
+    text-align: center;
+}
 </style>
+
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
